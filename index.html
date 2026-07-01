@@ -3,10 +3,397 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/base.css" />
+    <title>Louis | Portfolio Développeur Web</title>
+    <meta
+      name="description"
+      content="Portfolio de Louis, développeur web junior spécialisé en front-end, intégration, React et projets web modernes."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/sections.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
-    <h1>Portfolio</h1>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container site-header-inner">
+        <a class="site-logo" href="#home" aria-label="Retour à l'accueil">
+          Louis.dev
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+
+        <nav
+          class="site-nav"
+          id="site-navigation"
+          aria-label="Navigation principale"
+        >
+          <ul>
+            <li><a href="#home" class="is-active">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#journey">Parcours</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" id="home">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <span class="hero-badge">Disponible pour alternance / opportunités junior</span>
+
+            <div class="stack">
+              <p class="eyebrow">Portfolio développeur web</p>
+              <h1>
+                Bonjour, je suis Louis, développeur web junior orienté front-end,
+                intégration et expériences web modernes.
+              </h1>
+              <p class="muted">
+                Je conçois des interfaces claires, responsives et structurées,
+                avec une attention particulière portée à l’ergonomie, la qualité
+                du code et la présentation des projets.
+              </p>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">Voir mes projets</a>
+              <a class="button button-secondary" href="#contact">Me contacter</a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-card">
+              <div class="hero-card-grid">
+                <div class="hero-metric">
+                  <span class="muted">Stack principale</span>
+                  <strong>HTML · CSS · JS · React</strong>
+                </div>
+
+                <div class="hero-metric">
+                  <span class="muted">Approche</span>
+                  <strong>UI propre, responsive, structurée</strong>
+                </div>
+
+                <div class="hero-metric">
+                  <span class="muted">Outils</span>
+                  <strong>GitHub · VS Code · Notion</strong>
+                </div>
+
+                <div class="hero-metric">
+                  <span class="muted">Objectif</span>
+                  <strong>Créer des interfaces fiables et modernes</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">À propos</p>
+            <h2>Un profil technique, organisé et orienté projet</h2>
+            <p>
+              Je suis en fin de formation et je développe progressivement un profil
+              polyvalent entre intégration, front-end moderne, structuration de projet
+              et automatisation.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article class="about-card">
+              <h3>Mon approche</h3>
+              <p class="muted">
+                J’aime construire des interfaces lisibles, maintenables et cohérentes.
+                Je travaille avec méthode, en avançant par étapes claires :
+                cadrage, structure, intégration, test et amélioration.
+              </p>
+            </article>
+
+            <article class="about-card">
+              <h3>Ce que je recherche</h3>
+              <p class="muted">
+                Je souhaite rejoindre un environnement où je peux continuer à progresser
+                sur des projets web concrets, collaboratifs et bien pensés, avec un vrai
+                souci de qualité front-end.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Compétences</p>
+            <h2>Une base solide en développement web</h2>
+            <p>
+              Voici les technologies et méthodes que j’utilise le plus régulièrement
+              dans mes projets de formation et projets personnels.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-category">
+              <h3>Front-end</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Sass</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Responsive design</li>
+              </ul>
+            </article>
+
+            <article class="skill-category">
+              <h3>Back-end & données</h3>
+              <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>API REST</li>
+                <li>JSON</li>
+              </ul>
+            </article>
+
+            <article class="skill-category">
+              <h3>Outils & méthodes</h3>
+              <ul>
+                <li>Git / GitHub</li>
+                <li>VS Code</li>
+                <li>Notion</li>
+                <li>Figma</li>
+                <li>Accessibilité</li>
+                <li>SEO on-page</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projets</p>
+            <h2>Des projets pour démontrer ma progression</h2>
+            <p>
+              Chaque projet présenté ici met en avant un contexte, des choix techniques
+              et des solutions concrètes apportées à un besoin précis.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <header>
+                <p class="eyebrow">Projet de formation</p>
+                <h3>Kasa</h3>
+                <p>
+                  Développement d’une interface moderne en React avec routage,
+                  composants réutilisables et mise en page responsive.
+                </p>
+              </header>
+
+              <ul class="project-stack">
+                <li>React</li>
+                <li>Sass</li>
+                <li>JavaScript</li>
+                <li>Responsive</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Voir le code</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Voir la démo</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <header>
+                <p class="eyebrow">Projet de formation</p>
+                <h3>Project-MVG</h3>
+                <p>
+                  Mise en place d’une application avec logique back-end, base de données,
+                  gestion d’API et structuration complète du projet.
+                </p>
+              </header>
+
+              <ul class="project-stack">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>API</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Voir le code</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <header>
+                <p class="eyebrow">Projet personnel</p>
+                <h3>Portfolio Premium</h3>
+                <p>
+                  Conception de mon portfolio personnel avec une direction visuelle
+                  plus affirmée, une structure claire et un objectif de mise en ligne
+                  professionnelle.
+                </p>
+              </header>
+
+              <ul class="project-stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>UI Design</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Voir le dépôt</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <header>
+                <p class="eyebrow">Automatisation</p>
+                <h3>ppt-menu-maker</h3>
+                <p>
+                  Outil orienté automatisation autour de PowerPoint, pensé pour améliorer
+                  l’organisation, la génération et la manipulation de contenus.
+                </p>
+              </header>
+
+              <ul class="project-stack">
+                <li>Python</li>
+                <li>Automatisation</li>
+                <li>Scripts</li>
+                <li>Workflow</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Voir le dépôt</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="journey">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Parcours</p>
+            <h2>Une montée en compétences progressive</h2>
+            <p>
+              Mon parcours s’est construit autour de projets concrets, d’apprentissage
+              continu et d’une volonté de comprendre autant la technique que la logique
+              de réalisation complète d’un produit web.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <span>Étape 1</span>
+              <h3>Acquisition des fondamentaux</h3>
+              <p class="muted">
+                Appropriation de HTML, CSS, JavaScript et des bases de l’intégration web.
+              </p>
+            </article>
+
+            <article class="timeline-item">
+              <span>Étape 2</span>
+              <h3>Montée en puissance sur React</h3>
+              <p class="muted">
+                Développement de projets structurés avec composants, routage et logique
+                d’interface réutilisable.
+              </p>
+            </article>
+
+            <article class="timeline-item">
+              <span>Étape 3</span>
+              <h3>Ouverture au back-end et aux API</h3>
+              <p class="muted">
+                Travail sur Node.js, Express, MongoDB et architecture applicative plus complète.
+              </p>
+            </article>
+
+            <article class="timeline-item">
+              <span>Étape 4</span>
+              <h3>Professionnalisation</h3>
+              <p class="muted">
+                Construction d’un portfolio, amélioration de la présentation des projets,
+                accessibilité, SEO et mise en ligne.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Discutons de vos projets ou d’une opportunité</h2>
+            <p>
+              Je peux être contacté pour échanger autour d’un poste junior, d’une alternance
+              ou simplement d’un projet web à découvrir.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="contact-card">
+              <h3>Me contacter</h3>
+              <p class="muted">
+                Le plus simple est de passer par email ou via mes profils professionnels.
+              </p>
+
+              <div class="contact-list">
+                <a href="mailto:tonmail@example.com">tonmail@example.com</a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </div>
+            </article>
+
+            <article class="contact-card">
+              <h3>Ce que je peux apporter</h3>
+              <p class="muted">
+                Une approche sérieuse, une bonne capacité d’adaptation, un goût pour les
+                interfaces propres et la volonté d’évoluer dans une équipe qui construit
+                des produits utiles.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Louis — Portfolio développeur web</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
