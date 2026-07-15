@@ -13,6 +13,7 @@
   --color-secondary: #22c55e;
 
   --shadow-sm: 0 10px 30px rgba(15, 23, 42, 0.18);
+  --shadow-soft: 0 12px 32px rgba(2, 6, 23, 0.28);
   --shadow-lg: 0 20px 50px rgba(2, 6, 23, 0.35);
 
   --radius-sm: 0.75rem;

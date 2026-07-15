@@ -1,5 +1,6 @@
 @media (max-width: 1023px) {
   .site-header-inner {
+    position: relative;
     gap: 1rem;
   }
 
@@ -33,10 +34,6 @@
 }
 
 @media (max-width: 767px) {
-  .site-header-inner {
-    position: relative;
-  }
-
   .site-header {
     padding-block: 1rem;
   }
